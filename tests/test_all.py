@@ -61,4 +61,13 @@ def test_example_day04() -> None:
     )
 
     assert next(gen) == 18
-    assert next(gen) == 48
+    assert next(gen) == 9
+
+
+def test_real_day04() -> None:
+    from aoc2024.day04 import solve
+
+    gen = solve(get(4))
+
+    assert next(gen) == 2685
+    assert next(gen) == 2048
